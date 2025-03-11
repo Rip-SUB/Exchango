@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        
+        <input type="number" id="amount" placeholder="Enter amount">
+        
+        <!-- Search bar for FROM currency -->
+        <div class="search-container">
+            <input type="text" id="from-search" placeholder="Search currency..." onkeyup="filterFromCurrency()">
+        </div>
+        <div class="currency-container">
+            <img id="from-flag" src="https://flagcdn.com/w40/us.png" alt="Flag">
+            <select id="from-currency" class="currency-dropdown"></select>
+        </div>
+
+        <!-- Search bar for TO currency -->
+        <div class="search-container">
+            <input type="text" id="to-search" placeholder="Search currency..." onkeyup="filterToCurrency()">
+        </div>
+        <div class="currency-container">
+            <img id="to-flag" src="https://flagcdn.com/w40/us.png" alt="Flag">
+            <select id="to-currency" class="currency-dropdown"></select>
+        </div>
+
+        <button onclick="convertCurrency()">Convert</button>
+        <div class="output">
+            <h3>Converted Amount:</h3>
+            <p id="result">--</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  
+ <audio id="click-sound">
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mp3">
+</audio>
+
+  
+  
+
+  
+  
+</body>
+</html>
